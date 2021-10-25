@@ -1,0 +1,20 @@
+{
+  "containerDefinitions": [
+    {
+      "name": "nginx-task",
+      "image": "nginx:latest",
+      "memory": 256,
+      "cpu": 256,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "volumes": [],
+  "networkMode": "awsvpc",
+  "family": "nginx"
+}

@@ -1,0 +1,19 @@
+{
+    "LaunchTemplateName": "lt-webapp",
+    "VersionDescription": "Launch Template for a demo webapp",
+    "LaunchTemplateData": {
+        "ImageId": "ami-06e2d8d2a2a6be608",
+        "UserData": "IyEvYmluL2Jhc2ggZWNobyBFQ1NfQ0xVU1RFUj1lY3Mtd2ViYXBwID4+IC9ldGMvZWNzL2Vjcy5jb25maWc7ZWNobyBFQ1NfQkFDS0VORF9IT1NUPSA+PiAvZXRjL2Vjcy9lY3MuY29uZmlnO2VjaG8gRUNTX0VOQUJMRV9TUE9UX0lOU1RBTkNFX0RSQUlOSU5HPXRydWU+Pi9ldGMvZWNzL2Vjcy5jb25maWc7",
+        "TagSpecifications": [
+            {
+                "ResourceType": "instance",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "ECS webapp"
+                    }
+                ]
+            }
+        ]
+    }
+}

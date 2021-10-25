@@ -1,0 +1,37 @@
+{
+    "MixedInstancesPolicy": {
+        "LaunchTemplate": {
+            "LaunchTemplateSpecification": {
+                "LaunchTemplateName": "lt-webapp",
+                "Version": "$Latest"
+            },
+            "Overrides": [
+                {
+                    "InstanceType": "c4.large"
+                },
+                {
+                    "InstanceType": "c5.large"
+                },
+                {
+                    "InstanceType": "m4.large"
+                },
+                {
+                    "InstanceType": "m5.large"
+                },
+                {
+                    "InstanceType": "r4.large"
+                },
+                {
+                    "InstanceType": "r5.large"
+                }
+            ]
+        },
+        "InstancesDistribution": {
+            "OnDemandAllocationStrategy": "prioritized",
+            "OnDemandBaseCapacity": 0,
+            "OnDemandPercentageAboveBaseCapacity": 0,
+            "SpotAllocationStrategy": "capacity-optimized"
+        }
+    },
+    "DesiredCapacity": 0
+}
